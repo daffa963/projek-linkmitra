@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Komisi - LinkMitra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style> 
+        body { font-family: 'Inter', sans-serif; } 
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-700">LinkMitra</a>
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                <a href="dashboard.html" class="text-gray-600 hover:text-blue-600">Dashboard</a>
+                <a href="katalog.html" class="text-gray-600 hover:text-blue-600">Katalog Produk</a>
+                <a href="riwayat-komisi.html" class="text-blue-600 border-b-2 border-blue-600 pb-1">Riwayat Komisi</a>
+                <a href="profil.html" class="text-gray-600 hover:text-blue-600">Profil Saya</a>
+            </nav>
+            <a href="login.html" class="bg-red-500 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-red-600 transition duration-300">
+                Logout
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <div class="flex flex-col md:flex-row justify-between md:items-center mb-6">
+            <h1 class="text-3xl font-bold text-gray-800">Riwayat & Pencairan Komisi</h1>
+            <button class="mt-4 md:mt-0 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+                  <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm3 0a1 1 0 011-1h1a1 1 0 110 2H8a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+                Tarik Saldo Komisi
+            </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white p-6 rounded-2xl shadow-md">
+                <h3 class="text-gray-500 font-medium">Saldo Tersedia</h3>
+                <p class="text-3xl font-bold text-blue-600 mt-2">Rp 455.000</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-md">
+                <h3 class="text-gray-500 font-medium">Total Komisi Didapat</h3>
+                <p class="text-3xl font-bold text-gray-800 mt-2">Rp 1.280.000</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-md">
+                <h3 class="text-gray-500 font-medium">Sudah Ditarik</h3>
+                <p class="text-3xl font-bold text-gray-800 mt-2">Rp 825.000</p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-md">
+            <div class="p-6 border-b">
+                <h2 class="text-xl font-bold text-gray-800">Detail Transaksi</h2>
+            </div>
+            <div class="overflow-x-auto">
+                 <table class="w-full text-left text-sm">
+                    <thead class="bg-gray-50 text-gray-600">
+                        <tr>
+                            <th class="p-4 font-semibold">Tanggal</th>
+                            <th class="p-4 font-semibold">ID Pesanan</th>
+                            <th class="p-4 font-semibold">Nama Produk</th>
+                            <th class="p-4 font-semibold">Jumlah Komisi</th>
+                            <th class="p-4 font-semibold">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y">
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4">19 Jun 2025</td>
+                            <td class="p-4 font-mono">#ORD1025</td>
+                            <td class="p-4 font-medium">Essential Hoodie</td>
+                            <td class="p-4 font-semibold text-green-600">+ Rp 35.000</td>
+                            <td class="p-4"><span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Siap Ditarik</span></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-4">18 Jun 2025</td>
+                            <td class="p-4 font-mono">#ORD1024</td>
+                            <td class="p-4 font-medium">Smartwatch GT5 Pro</td>
+                            <td class="p-4 font-semibold text-gray-500">+ Rp 90.000</td>
+                            <td class="p-4"><span class="bg-gray-200 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Sudah Ditarik</span></td>
+                        </tr>
+                         <tr class="hover:bg-gray-50">
+                            <td class="p-4">17 Jun 2025</td>
+                            <td class="p-4 font-mono">#ORD1023</td>
+                            <td class="p-4 font-medium">Paket Skincare Bright</td>
+                            <td class="p-4 font-semibold text-green-600">+ Rp 40.000</td>
+                            <td class="p-4"><span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Siap Ditarik</span></td>
+                        </tr>
+                         <tr class="hover:bg-gray-50">
+                            <td class="p-4">16 Jun 2025</td>
+                            <td class="p-4 font-mono">#ORD1022</td>
+                            <td class="p-4 font-medium">Air Humidifier 2L</td>
+                            <td class="p-4 font-semibold text-yellow-600">+ Rp 25.000</td>
+                            <td class="p-4"><span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Menunggu</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="p-4 border-t text-center text-sm">
+                <p class="text-gray-600">Menampilkan 1-4 dari 20 transaksi</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

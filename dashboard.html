@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - LinkMitra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style> 
+        body { font-family: 'Inter', sans-serif; } 
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-700">LinkMitra</a>
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                <a href="dashboard.html" class="text-blue-600 border-b-2 border-blue-600 pb-1">Dashboard</a>
+                <a href="katalog.html" class="text-gray-600 hover:text-blue-600">Katalog Produk</a>
+                <a href="riwayat-komisi.html" class="text-gray-600 hover:text-blue-600">Riwayat Komisi</a>
+                <a href="profil.html" class="text-gray-600 hover:text-blue-600">Profil Saya</a>
+            </nav>
+            <a href="login.html" class="bg-red-500 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-red-600 transition duration-300">
+                Logout
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <section class="mb-8 bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-8 rounded-2xl shadow-lg">
+            <h1 class="text-3xl font-bold">Selamat Datang, [Nama Mitra]!</h1>
+            <p class="text-blue-200 mt-1">Level Anda saat ini: <span class="font-bold bg-white text-blue-700 px-2 py-1 rounded-md text-sm">Level 1: Mitra Teraktivasi</span></p>
+
+            <div class="mt-6">
+                <h2 class="font-semibold text-lg">Misi Selanjutnya: Mencapai Level 2 (Mitra Bintang)</h2>
+                <p class="text-sm text-blue-200">Dapatkan sampel produk baru dan bonus komisi!</p>
+                <div class="mt-3">
+                    <div class="flex justify-between mb-1"><span class="text-sm font-medium">Progres Penjualan</span><span class="text-sm font-medium">Rp 750.000 / Rp 2.500.000</span></div>
+                    <div class="w-full bg-blue-800 rounded-full h-4"><div class="bg-white rounded-full h-4" style="width: 30%"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+            <div class="bg-white p-6 rounded-xl shadow-md"><h3 class="text-gray-500 font-medium">Komisi Bulan Ini</h3><p class="text-3xl font-bold text-gray-800 mt-2">Rp 215.500</p></div>
+            <div class="bg-white p-6 rounded-xl shadow-md"><h3 class="text-gray-500 font-medium">Total Penjualan</h3><p class="text-3xl font-bold text-gray-800 mt-2">7</p></div>
+            <div class="bg-white p-6 rounded-xl shadow-md"><h3 class="text-gray-500 font-medium">Klik Link Afiliasi</h3><p class="text-3xl font-bold text-gray-800 mt-2">1.204</p></div>
+            <div class="bg-white p-6 rounded-xl shadow-md"><h3 class="text-gray-500 font-medium">Konversi</h3><p class="text-3xl font-bold text-gray-800 mt-2">0.58%</p></div>
+        </section>
+
+        <section class="grid lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2 bg-white p-6 rounded-xl shadow-md">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Katalog Produk & Link Afiliasi</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left"><thead class="bg-gray-50 text-gray-600"><tr><th class="p-4 font-semibold">Produk</th><th class="p-4 font-semibold">Potensi Komisi</th><th class="p-4 font-semibold text-center">Aksi</th></tr></thead>
+                        <tbody class="divide-y">
+                            <tr><td class="p-4 flex items-center gap-4"><img src="https://images.tokopedia.net/img/cache/100-square/VqbcmM/2022/10/3/b6b553c7-4340-424a-9520-22624505187e.jpg" class="w-12 h-12 rounded-md object-contain"><span class="font-medium">Smartwatch GT5 Pro</span></td><td class="p-4 font-medium text-green-600">~Rp 90.000</td><td class="p-4 text-center"><button class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold hover:bg-blue-200">Salin Link</button></td></tr>
+                            <tr><td class="p-4 flex items-center gap-4"><img src="https://images.tokopedia.net/img/cache/100-square/hDjmkQ/2023/12/12/359a1e05-6548-4796-905e-a6122d2b1f80.jpg" class="w-12 h-12 rounded-md object-contain"><span class="font-medium">Essential Hoodie</span></td><td class="p-4 font-medium text-green-600">~Rp 35.000</td><td class="p-4 text-center"><button class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold hover:bg-blue-200">Salin Link</button></td></tr>
+                            <tr><td class="p-4 flex items-center gap-4"><img src="https://images.tokopedia.net/img/cache/100-square/VqbcmM/2021/8/12/93385731-9a7e-400a-b364-469038d12226.jpg" class="w-12 h-12 rounded-md object-contain"><span class="font-medium">Paket Skincare Bright</span></td><td class="p-4 font-medium text-green-600">~Rp 40.000</td><td class="p-4 text-center"><button class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold hover:bg-blue-200">Salin Link</button></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4 text-center"><a href="#" class="text-blue-600 font-semibold hover:underline">Lihat Semua Produk & Bank Konten...</a></div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Aktivitas Terbaru</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-green-100 text-green-600 rounded-full p-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M8.433 7.418c.155-.103.346-.103.5 0l4.25 2.833a.5.5 0 010 .834l-4.25 2.833a.5.5 0 01-.5 0V7.418z" /><path d="M6.5 6A1.5 1.5 0 005 7.5v5A1.5 1.5 0 006.5 14h8a1.5 1.5 0 001.5-1.5v-5A1.5 1.5 0 0014.5 6h-8z" /></svg></div>
+                        <div>
+                            <p class="text-sm font-medium text-gray-800">Penjualan **Essential Hoodie** berhasil! Komisi sebesar **Rp 35.000** ditambahkan.</p>
+                            <p class="text-xs text-gray-500">5 menit yang lalu</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="bg-blue-100 text-blue-600 rounded-full p-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" /><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" /></svg></div>
+                        <div>
+                            <p class="text-sm font-medium text-gray-800">Ada **15 klik baru** dari link afiliasi **Smartwatch GT5 Pro** Anda.</p>
+                            <p class="text-xs text-gray-500">45 menit yang lalu</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                         <div class="bg-yellow-100 text-yellow-600 rounded-full p-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4z" clip-rule="evenodd" /></svg></div>
+                        <div>
+                            <p class="text-sm font-medium text-gray-800">Pesanan baru untuk **Paket Skincare Bright** telah diterima & sedang diverifikasi.</p>
+                            <p class="text-xs text-gray-500">2 jam yang lalu</p>
+                        </div>
+                    </div>
+                     <div class="flex items-start gap-4">
+                         <div class="bg-purple-100 text-purple-600 rounded-full p-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M8.445 14.832A1 1 0 0010 14h2a1 1 0 100-2h-2a1 1 0 00-1.555.832z" /><path fill-rule="evenodd" d="M3 3a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V3zm12 1a1 1 0 011 1v2a1 1 0 11-2 0V5a1 1 0 011-1zM5 4a1 1 0 00-1 1v2a1 1 0 102 0V5a1 1 0 00-1-1z" clip-rule="evenodd" /></svg></div>
+                        <div>
+                            <p class="text-sm font-medium text-gray-800">Pencairan dana sebesar **Rp 180.500** berhasil ditransfer.</p>
+                            <p class="text-xs text-gray-500">Kemarin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
